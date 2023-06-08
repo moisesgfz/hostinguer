@@ -1,0 +1,659 @@
+/* Estilos Globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+ }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilos del Encabezado */
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #7F22DC;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Estilos de las Secciones */
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  .servicios-grid {
+    display: flex;
+    flex-wrap: wrap; /* Agregamos esta propiedad para que los servicios se acomoden en varias filas en dispositivos pequeños */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .servicio {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Agregamos un margen inferior para que los servicios no se peguen en dispositivos móviles */
+  }
+  
+  .servicio i {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .servicio h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  .servicio p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  .planes-grid {
+    display: flex;
+    flex-wrap: wrap; /* Agregamos esta propiedad para que los planes se acomoden en varias filas en dispositivos pequeños */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .plan {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Agregamos un margen inferior para que los planes no se peguen en dispositivos móviles */
+  }
+  
+  .plan h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  .plan p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  .plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .plan ul li {
+    margin-bottom: 10px;
+  }
+  
+  .plan ul li i {
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .precio {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .btn-plan {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-plan:hover {
+    background-color: #0062cc;
+  }
+
+
+  
+  /* Estilos del Pie de Página */
+  
+  footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul li:last-child {
+    margin-right: 0;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer ul li a:hover {
+    color: #007bff;
+  }
+
+
+    /* Estilos de los Testimonios */
+
+.testimonios {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+
+.testimonios h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.testimonio {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.testimonio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.testimonio h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.testimonio p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.testimonio .estrellas {
+  margin-bottom: 20px;
+}
+
+.testimonio .estrella {
+  font-size: 24px;
+  color: #f1c40f;
+  margin-right: 5px;
+}
+
+.testimonio .nombre {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+
+.testimonio .cargo {
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+
+
+footer{
+    background: #7F22DC;
+    color: #fff;
+}
+
+
+
+/* Estilos de la sección "Sobre nosotros" */
+
+.sobre-nosotros {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.sobre-nosotros h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.sobre-nosotros h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.sobre-nosotros p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #4a4a4a;
+}
+
+.sobre-nosotros ul {
+  list-style: none;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.sobre-nosotros li {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.sobre-nosotros .imagen {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sobre-nosotros img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos de la sección de contacto */
+
+.contacto {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.contacto h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.formulario-contacto {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.formulario-contacto label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #4a4a4a;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.formulario-contacto button {
+  background-color: #4a90e2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #2e6da4;
+}
+
+.informacion-contacto h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.informacion-contacto ul {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.informacion-contacto ul li {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.redes-sociales {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.redes-sociales li {
+  margin-right: 20px;
+}
+
+.redes-sociales a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  background-color: #4a90e2;
+}
+
+.redes-sociales a i.fa-facebook {
+  background-color: #3b5998;
+}
+
+.redes-sociales a i.fa-twitter {
+  background-color: #00aced;
+}
+
+.redes-sociales a i.fa-instagram {
+  background-color: #517fa4;
+}
+
+.redes-sociales a i.fa-linkedin {
+  background-color: #0077b5;
+}
+
+/* Media Queries */
+
+
+  @media (max-width: 768px) {
+
+    .container {
+      padding: 0 10px; /* Reducimos el padding horizontal del contenedor para que los elementos no se peguen en dispositivos pequeños */
+    }
+  
+    .logo h1 {
+      font-size: 24px; /* Reducimos el tamaño de la fuente del logo en dispositivos pequeños */
+    }
+  
+    nav ul {
+      display: none; /* Ocultamos la lista de navegación en dispositivos pequeños */
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0; /* Agregamos un margen entre cada elemento de la lista de navegación */
+    }
+  
+    nav ul li a {
+      font-size: 20px; /* Reducimos el tamaño de la fuente de cada elemento de la lista de navegación en dispositivos pequeños */
+    }
+  
+    .hero {
+      height: 300px; /* Reducimos la altura del hero en dispositivos pequeños */
+    }
+  
+    .hero h1 {
+      font-size: 36px; /* Reducimos el tamaño de la fuente del título del hero en dispositivos pequeños */
+    }
+  
+    .hero p {
+      font-size: 20px; /* Reducimos el tamaño de la fuente del subtítulo del hero en dispositivos pequeños */
+    }
+  
+    .servicios-grid {
+      flex-direction: column; /* Cambiamos la dirección del flexbox para que los servicios se acomoden en una columna en dispositivos pequeños */
+    }
+  
+    .servicio {
+      flex-basis: 100%; /* Hacemos que cada servicio ocupe todo el ancho en dispositivos pequeños */
+    }
+  
+    .planes-grid {
+      flex-direction: column; /* Cambiamos la dirección del flexbox para que los planes se acomoden en una columna en dispositivos pequeños */
+    }
+  
+    .plan {
+      flex-basis: 100%; /* Hacemos que cada plan ocupe todo el ancho en dispositivos pequeños */
+    }
+
+     .testimonios h2 {
+    font-size: 30px; /* Reducimos el tamaño de la fuente del título en dispositivos pequeños */
+  }
+
+  .testimonio img {
+    width: 80px; /* Reducimos el tamaño de la imagen en dispositivos pequeños */
+    height: 80px;
+    margin-bottom: 10px; /* Reducimos el margen inferior de la imagen en dispositivos pequeños */
+  }
+
+  .testimonio h3 {
+    font-size: 20px; /* Reducimos el tamaño de la fuente del nombre en dispositivos pequeños */
+    margin-bottom: 0; /* Quitamos el margen inferior del nombre en dispositivos pequeños */
+  }
+
+  .testimonio .cargo {
+    font-size: 16px; /* Reducimos el tamaño de la fuente del cargo en dispositivos pequeños */
+  }
+
+   .sobre-nosotros h2 {
+    font-size: 30px; /* Reducimos el tamaño de la fuente del título en dispositivos pequeños */
+  }
+
+  .sobre-nosotros p {
+    font-size: 18px; /* Reducimos el tamaño de la fuente del texto en dispositivos pequeños */
+    margin-bottom: 20px; /* Reducimos el margen inferior del texto en dispositivos pequeños */
+  }
+
+  .sobre-nosotros img {
+    max-width: 300px; /* Reducimos el tamaño de la imagen en dispositivos pequeños */
+
+  }
+
+    .sobre-nosotros h2 {
+    font-size: 30px; /* Reducimos el tamaño de la fuente del título en dispositivos pequeños */
+  }
+
+  .sobre-nosotros h3 {
+    font-size: 20px; /* Reducimos el tamaño de la fuente de los valores en dispositivos pequeños */
+    margin-bottom: 10px; /* Reducimos el margen inferior de los valores en dispositivos pequeños */
+  }
+
+  .sobre-nosotros p {
+    font-size: 18px; /* Reducimos el tamaño de la fuente del texto en dispositivos pequeños */
+    margin-bottom: 20px; /* Reducimos el margen inferior del texto en dispositivos pequeños */
+  }
+
+  .sobre-nosotros ul {
+    margin-left: 0; /* Quitamos el margen izquierdo de la lista en dispositivos pequeños */
+  }
+
+  .sobre-nosotros li {
+    font-size: 18px; /* Reducimos el tamaño de la fuente de los valores en dispositivos pequeños */
+    margin-bottom: 5px; /* Reducimos el margen inferior de los valores en dispositivos pequeños */
+  }
+
+  .sobre-nosotros img {
+    max-width: 300px; /* Reducimos el tamaño de la imagen en dispositivos pequeños */
+  }
+
+  .formulario-contacto label,
+  .informacion-contacto h3 {
+    font-size: 24px;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 16px;
+  }
+
+  .redes-sociales a {
+    font-size: 16px;
+  }
